@@ -1,26 +1,21 @@
-const fs = require('fs');
+const fsPromises = require('fs').promises;
 const path = require('path');
+const { start } = require('repl');
 
-// console.log();
 
-fs.readFile(path.join(__dirname, 'chapter-02', 'starter.txt'), 'utf-8', (err, data) => {
-    if (err) throw err;
+const fileOps = async () => {
+    try {
+        await fsPromises.writeFile(path.join(__dirname, 'chapter-02', 'starter.txt'), 'Hello, world!!!');
+        const data = await fsPromises.readFile(path.join(__dirname, 'chapter-02', 'starter.txt'), 'utf-8');
+        console.log(data);
+        await fsPromises.unlink(path.join(__dirname, 'chapter-02', 'starter.txt'));
+        await fsPromises.appendFile(path.join(__dirname, 'chapter-02', 'reply.txt'), 'hello world');
+    } catch (error) {
+        console.log(error);
+    }
+};
 
-    console.log(data);
-});
-
-fs.writeFile(path.join(__dirname, 'chapter-02', 'reply.txt'), 'Hi, nice to meet you', (err) => {
-    if (err) throw err;
-    
-    console.log('Write complete');
-
-    fs.appendFile(path.join(__dirname, 'chapter-02', 'test.txt'), 'Thank you', (err) => {
-        if (err) throw err;
-        
-        console.log('Append complete');
-    });
-});
-
+fileOps();
 
 
 // exit on uncaught error
