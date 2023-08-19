@@ -1,13 +1,17 @@
-// const fs = require('fs');
+const EventEmitter = require('events');
+const { logEvents } = require('./chapter-04/logEvents');
 
-// fs.mkdir('./chapter-03', () => {
-//     console.log('Directory created');
-// })
+class MyEmitter extends EventEmitter { }
 
-const { format } = require('date-fns');
-const {v4: uuid} = require('uuid')
+// create an instance of the class
+const myEmitter = new MyEmitter();
 
-const date = format(new Date(), 'yyyy-MM-dd\thh:mm:ss');
+// add listener to event
+myEmitter.on('log', (msg) => logEvents(msg));
 
-console.log(date);
-console.log(uuid());
+// emit an event
+setTimeout(() => {
+    myEmitter.emit('log', 'Log event emitted.');
+}, 2000);
+
+
