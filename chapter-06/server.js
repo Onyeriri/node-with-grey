@@ -20,6 +20,16 @@ const three = (req, res) => {
     res.send('Finished!!!');
 }
 
+// in-built middle-ware
+// middleware for form data
+app.use(express.urlencoded({ extended: false }));
+
+// middleware for json file
+app.use(express.json())
+
+// middleware for static file
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/chain(.html)?', [one, two, three])
 
 app.get('^/$|/index(.html)?', (req, res) => {
