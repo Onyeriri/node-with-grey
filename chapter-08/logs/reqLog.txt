@@ -86,3 +86,4 @@
 2023-09-02	08:38:01	22412df2-542f-40fa-8346-a0e9b52a58a4	GET	 undefined	 /employees
 2023-09-02	08:39:09	b6f889f2-1434-43f1-a664-239f29897e64	GET	 undefined	 /employees/3
 2023-09-02	08:39:21	96593ba0-5f01-4f9a-81ee-22b429bd8103	GET	 undefined	 /employees/1
+2023-09-02	08:51:45	9793274b-b79e-453e-8bc4-60606e507af8	GET	 undefined	 /css/style.css
