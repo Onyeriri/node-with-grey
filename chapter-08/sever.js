@@ -53,4 +53,4 @@ app.all('*', (req, res) => {
 app.use(errorHandler);
 
 // server running on port 3500
-app.listen(PORT, () => console.log(`App listening to port ${PORT}`))
+app.listen(PORT, () => console.log(`App listening to port ${PORT}`));
