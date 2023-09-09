@@ -87,6 +87,7 @@
 2023-09-02	08:39:09	b6f889f2-1434-43f1-a664-239f29897e64	GET	 undefined	 /employees/3
 2023-09-02	08:39:21	96593ba0-5f01-4f9a-81ee-22b429bd8103	GET	 undefined	 /employees/1
 2023-09-02	08:51:45	9793274b-b79e-453e-8bc4-60606e507af8	GET	 undefined	 /css/style.css
-2023-09-02	12:54:44	69146a87-0587-40c4-aa2f-e28d1fbb6ef5	GET	 undefined	 /subdir/index.html
-2023-09-02	12:54:44	732ce170-f89f-4e63-84d9-d8651b6177a2	GET	 undefined	 /css/style.css
-2023-09-02	07:29:18	d94cada7-cbdd-4ca9-b6d5-f9b126eb77e2	GET	 undefined	 /css/style.css
+2023-09-02	08:14:58	845528fa-3a14-4d41-b511-f49edb31e3eb	POST	 undefined	 /register
+2023-09-02	10:12:54	c7aa29d9-1c52-4d5d-abfa-74566e18de82	POST	 undefined	 /register
+2023-09-02	10:15:36	d0f8b1ed-a461-4037-a5c8-5da2a382fa35	POST	 undefined	 /register
+2023-09-09	05:51:36	8880ed14-a450-4d5b-bf38-95e7220f6563	GET	 undefined	 /auth
